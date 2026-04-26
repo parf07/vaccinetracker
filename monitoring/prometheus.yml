@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'shipment_exporter'
+    scrape_interval: 5s # Faster updates for testing
+    static_configs:
+      - targets: ['host.docker.internal:9000']
+      # "host.docker.internal" allows the container to see your local machine
+  # If you eventually use an exporter for Ethereum/Blockchain data:
+  # - job_name: 'ethereum_exporter'
+  #   static_configs:
+  #     - targets: ['host.docker.internal:9000']

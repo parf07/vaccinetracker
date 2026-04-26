@@ -1,0 +1,25 @@
+{
+  "name": "vaccine-tracker-hardhat",
+  "version": "1.0.0",
+  "description": "Blockchain Shipment Tracker with Transparent Proxy",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "audit": "aderyn .",
+    "node": "hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@openzeppelin/contracts": "^4.9.3",
+    "@openzeppelin/contracts-upgradeable": "^4.9.3",
+    "@openzeppelin/hardhat-upgrades": "^1.28.0",
+    "hardhat": "^2.17.0"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
