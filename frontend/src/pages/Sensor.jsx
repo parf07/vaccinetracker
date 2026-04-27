@@ -128,7 +128,7 @@ const Sensor = ({ setAccount }) => {
                   step="0.1"
                   value={tempInput}
                   onChange={(e) => setTempInput(e.target.value)}
-                  placeholder="22.5"
+                  placeholder="E.15"
                   className={inputClass}
                   required
                   disabled={loading}
